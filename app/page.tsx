@@ -6,7 +6,6 @@ import { ArrowRight, Palette, Monitor, Code, Star } from "lucide-react"
 export default function HomePage() {
   return (
     <div className="cosmic-bg">
-      {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="animate-float-slow absolute top-20 left-10 w-32 h-32 opacity-20">
@@ -60,11 +59,9 @@ export default function HomePage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative h-96">
           <div className="relative h-full overflow-hidden rounded-2xl">
-            {/* Enhanced fade gradients for all columns */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60 z-10"></div>
 
             <div className="grid grid-cols-3 gap-4 h-full">
-              {/* Column 1 - Slowest */}
               <div className="relative overflow-hidden rounded-2xl">
                 <div className="animate-vertical-slide-slow flex flex-col space-y-6">
                   <div className="flex-shrink-0 w-full h-80">
@@ -101,7 +98,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Column 2 - Medium speed */}
+              {/* Duplicated because I cant fix the carosel*/}
               <div className="relative overflow-hidden rounded-2xl">
                 <div className="animate-vertical-slide-medium flex flex-col space-y-6">
                   <div className="flex-shrink-0 w-full h-80">
@@ -138,7 +135,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Column 3 - Fastest (but still slow) */}
+              {/* Duplicated because I cant fix the carosel*/}
               <div className="relative overflow-hidden rounded-2xl">
                 <div className="animate-vertical-slide-fast flex flex-col space-y-6">
                   <div className="flex-shrink-0 w-full h-80">
@@ -179,7 +176,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
+
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -224,14 +221,11 @@ export default function HomePage() {
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative h-96">
-          {/* Horizontal carousel with edge fading */}
           <div className="relative h-full overflow-hidden">
-            {/* Edge fade gradients */}
             <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-black to-transparent z-10"></div>
             <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-black to-transparent z-10"></div>
 
             <div className="flex animate-slide-left space-x-8 h-full">
-              {/* Original set of images */}
               <div className="flex-shrink-0 w-80 h-72">
                 <img
                   src="/photos/BigBoiBasket.png"
@@ -255,7 +249,6 @@ export default function HomePage() {
                   className="w-full h-full object-cover rounded-xl cosmic-glow"
                 />
               </div>
-              {/* Duplicated set for seamless looping */}
               <div className="flex-shrink-0 w-80 h-72">
                 <img
                   src="/photos/BigBoiBasket.png"
@@ -284,7 +277,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="absolute inset-0 pointer-events-none">
           <div className="animate-float-medium absolute top-10 left-20 w-16 h-16 opacity-10">
@@ -300,7 +292,7 @@ export default function HomePage() {
             <CardContent className="p-12">
               <Star className="w-16 h-16 text-yellow-400 mx-auto mb-6 hover:scale-110 transition-transform duration-300" />
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Launch Your Project?</h2>
-              <p className="text-xl text-gray-300 mb-8">Let's create something extraordinary together</p>
+              <p className="text-xl text-gray-300 mb-8">Let&apos;s create something extraordinary together</p>
               <Button
                 asChild
                 size="lg"
