@@ -18,9 +18,8 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "CosmicDesign - Graphic Design, UI/UX & Web Development",
-  description: "Professional graphic design, UI/UX design, and web development services with a cosmic touch.",
-  generator: "v0.dev",
+  title: "Stellar Arts - Graphic Design, UI/UX & Web Development",
+  description: "Professional graphic design, UI/UX design, and web development services.",
 }
 
 export default function RootLayout({
