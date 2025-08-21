@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "Stellar Arts - Graphic Design, UI/UX & Web Development",
+  title: "Stellar Arts",
   description: "Professional graphic design, UI/UX design, and web development services.",
 }
 
