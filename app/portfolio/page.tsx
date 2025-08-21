@@ -228,16 +228,14 @@ export default function PortfolioPage() {
             >
               <CardContent className="p-0">
                 {item.featured && (
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                    <div className="relative">
-                      <Badge className="bg-transparent border-2 border-transparent bg-gradient-to-r from-purple-500/30 via-cyan-500/30 to-purple-500/30 text-white font-semibold text-sm px-4 py-2 shadow-2xl backdrop-blur-sm">
-                        <span className="relative z-10 bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent font-bold">
-                          Featured
-                        </span>
-                      </Badge>
-                      <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full blur-md opacity-60 -z-10"></div>
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
+                    
+                   
+                       <Badge className="bg-purple-500 border-2 border-transparent bg-clip-border text-white font-semibold text-sm px-4 py-1 ">
+                      Featured
+                    </Badge>
+                      <div className="absolute inset-0 from-purple-500 to-purple-500 rounded-full blur-md opacity-60 -z-10"></div>
                     </div>
-                  </div>
                 )}
 
                 <div className="relative overflow-hidden rounded-t-lg">
