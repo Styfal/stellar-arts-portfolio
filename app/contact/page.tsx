@@ -7,7 +7,6 @@ export default function ContactPage() {
   return (
     <div className="cosmic-bg min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -20,7 +19,9 @@ export default function ContactPage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Contact Form */}
+
+
+
           <div className="lg:col-span-2">
             <Card className="cosmic-card">
               <CardHeader>
@@ -111,8 +112,8 @@ export default function ContactPage() {
           </div>
 
           <div className="space-y-8">
-            {/* Recent Clients */}
-            <Card className="cosmic-card hover:scale-105 transition-transform duration-200">
+          
+          <Card className="cosmic-card hover:scale-105 transition-transform duration-200">
               <CardHeader>
                 <CardTitle className="text-xl text-white flex items-center">
                   <Users className="w-5 h-5 text-purple-400 mr-2" />

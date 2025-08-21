@@ -4,6 +4,17 @@ import { Badge } from "@/components/ui/badge"
 import { Check, Star, Zap, Crown, CreditCard, Building2 } from "lucide-react"
 import Link from "next/link"
 
+
+interface PricingPlan {
+  name: string
+  description: string
+  price: string
+  period: string
+  features: string[]
+  popular: boolean
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>> 
+}
+
 const pricingPlans = [
   {
     name: "Thumbnail",
@@ -160,7 +171,7 @@ const uiuxPlans = [
   },
   {
     name: "UI/UX Enterprise",
-    price: "Contact",
+    price: "Contact", 
     period: "Sales Team",
     description: "End-to-end product design",
     icon: Crown,
@@ -179,7 +190,7 @@ const uiuxPlans = [
   },
 ]
 
-function PricingCard({ plan }: { plan: any }) {
+function PricingCard({ plan }: { plan: PricingPlan }) {
   const IconComponent = plan.icon
 
   return (
@@ -242,7 +253,6 @@ export default function PricingPage() {
   return (
     <div className="cosmic-bg min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -258,13 +268,12 @@ export default function PricingPage() {
           </p>
         </div>
 
-        {/* Payment Options Section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-20"> 
           <h2 className="text-2xl font-bold text-white mb-6">Payment Options</h2>
           <p className="text-gray-400 mb-8">We accept multiple payment methods for your convenience</p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            {/* PayPal Option */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center"> 
+          
             <div className="flex items-center space-x-4 p-4 rounded-lg border border-purple-500/30 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 hover:from-purple-500/20 hover:to-cyan-500/20 transition-all duration-300">
               <div className="p-3 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 border border-blue-500/30">
                 <CreditCard className="w-6 h-6 text-blue-400" />
@@ -275,7 +284,7 @@ export default function PricingPage() {
               </div>
             </div>
 
-            {/* Bank Transfer Option */}
+           
             <div className="flex items-center space-x-4 p-4 rounded-lg border border-purple-500/30 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 hover:from-purple-500/20 hover:to-cyan-500/20 transition-all duration-300">
               <div className="p-3 rounded-full bg-gradient-to-r from-green-500/20 to-green-600/20 border border-green-500/30">
                 <Building2 className="w-6 h-6 text-green-400" />
@@ -292,7 +301,7 @@ export default function PricingPage() {
           </p>
         </div>
 
-        {/* Graphic Design Section */}
+        
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Graphic Design</h2>
@@ -305,7 +314,7 @@ export default function PricingPage() {
           </div>
         </div>
 
-        {/* Web Development Section */}
+
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Web Development</h2>
@@ -318,7 +327,7 @@ export default function PricingPage() {
           </div>
         </div>
 
-        {/* UI/UX Design Section */}
+       
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">UI/UX Design</h2>
@@ -331,7 +340,7 @@ export default function PricingPage() {
           </div>
         </div>
 
-        {/* Custom Projects CTA */}
+       
         <div className="text-center">
           <Card className="cosmic-card cosmic-glow max-w-4xl mx-auto">
             <CardContent className="p-12">

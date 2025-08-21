@@ -170,10 +170,10 @@ export default function PortfolioPage() {
     return 0
   })
 
-  return (
-    <div className="cosmic-bg min-h-screen py-20">
+  return ( // Change Client name later
+    <div className="cosmic-bg min-h-screen py-20"> 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+      
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -199,7 +199,7 @@ export default function PortfolioPage() {
           </p>
         </div>
 
-        {/* Category Filter */}
+    
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <Button
@@ -217,7 +217,7 @@ export default function PortfolioPage() {
           ))}
         </div>
 
-        {/* Portfolio Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredItems.map((item) => (
             <Card
@@ -235,7 +235,6 @@ export default function PortfolioPage() {
                           Featured
                         </span>
                       </Badge>
-                      {/* Glow effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full blur-md opacity-60 -z-10"></div>
                     </div>
                   </div>
@@ -264,7 +263,6 @@ export default function PortfolioPage() {
                   <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
                   <p className="text-gray-400 mb-3 text-sm">{item.description}</p>
 
-                  {/* Tags */}
                   <div className="flex flex-wrap gap-1 mb-4">
                     {item.tags.map((tag) => (
                       <Badge key={tag} variant="outline" className="text-xs border-cyan-500/30 text-cyan-300">
@@ -310,7 +308,6 @@ export default function PortfolioPage() {
           ))}
         </div>
 
-        {/* CTA Section */}
         <div className="text-center mt-20">
           <Card className="cosmic-card cosmic-glow max-w-2xl mx-auto">
             <CardContent className="p-8">

@@ -114,7 +114,6 @@ export default function FAQPage() {
   return (
     <div className="cosmic-bg min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -126,7 +125,6 @@ export default function FAQPage() {
           </p>
         </div>
 
-        {/* FAQ Categories */}
         <div className="space-y-8">
           {faqCategories.map((category, categoryIndex) => {
             const IconComponent = category.icon
@@ -161,7 +159,6 @@ export default function FAQPage() {
           })}
         </div>
 
-        {/* Still Have Questions CTA */}
         <div className="text-center mt-16">
           <Card className="cosmic-card cosmic-glow">
             <CardContent className="p-12">

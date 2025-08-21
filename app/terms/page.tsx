@@ -54,7 +54,6 @@ export default function TermsPage() {
   return (
     <div className="cosmic-bg min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -67,7 +66,6 @@ export default function TermsPage() {
           <p className="text-sm text-gray-500 mt-4">Last updated: August 2025</p>
         </div>
 
-        {/* Introduction */}
         <Card className="cosmic-card mb-8">
           <CardContent className="p-8">
             <p className="text-gray-300 leading-relaxed">
@@ -78,7 +76,7 @@ export default function TermsPage() {
           </CardContent>
         </Card>
 
-        {/* Terms Sections */}
+    
         <div className="space-y-8">
           {termsSection.map((section, index) => {
             const IconComponent = section.icon
@@ -107,7 +105,6 @@ export default function TermsPage() {
           })}
         </div>
 
-        {/* Additional Terms */}
         <div className="space-y-8 mt-8">
           <Card className="cosmic-card">
             <CardHeader>
@@ -242,8 +239,7 @@ export default function TermsPage() {
             </CardContent>
           </Card>
         </div>
-
-        {/* Contact Information */}
+        
         <Card className="cosmic-card cosmic-glow mt-12">
           <CardContent className="p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Questions About These Terms?</h2>
