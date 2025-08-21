@@ -69,8 +69,8 @@ export default function TermsPage() {
         <Card className="cosmic-card mb-8">
           <CardContent className="p-8">
             <p className="text-gray-300 leading-relaxed">
-              These Terms of Service ("Terms") govern your use of services provided by Stellar Arts ("we," "us," or
-              "our"). By engaging our services, you ("Client" or "you") agree to be bound by these Terms. Please read
+              These Terms of Service (&quot;Terms&quot;) govern your use of services provided by Stellar Arts (&quot;we,&quot; &quot;us,&quot; or
+              &quot;our&quot;). By engaging our services, you (&quot;Client&quot; or &quot;you&quot;) agree to be bound by these Terms. Please read
               them carefully before proceeding with any project.
             </p>
           </CardContent>
